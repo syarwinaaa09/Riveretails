@@ -1,3 +1,4 @@
+'use client'
 import Head from "next/head";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
@@ -5,12 +6,11 @@ import ProductFeed from "../components/ProductFeed";
 
 
 export default function Home({ products }) {
-    <Head>
-       <title>Riveretails</title>
-    </Head>
   return (
     <div className="bg-gray-100">
-
+      <Head>
+        <title>Riveretails</title>
+      </Head>
       <Header />
 
       <main className="max-w-screen-2xl mx-auto">
